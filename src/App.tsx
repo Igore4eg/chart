@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import './App.css';
 
@@ -16,6 +16,14 @@ const initialState: IInitialState[]  = [
 
 function App() {
   const [chart, setChart] = useState(initialState);
+
+  useEffect(() => {
+    const timerId = setInterval(updateChart, 30000);
+
+    return () => {
+      clearInterval(timerId)
+    }
+  }, [])
   
   const allTime: number = +chart.reduce((prev, cur) => {
     return prev + cur.time

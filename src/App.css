@@ -2,25 +2,29 @@
   margin:  auto 50px;
 }
 .charts {
-  
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
 }
 .wraperString {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   column-gap: 20px;
 }
 .lineName {
-
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
 .wrapperLine {
   width: 65%;
   background-color: rgb(226, 226, 226);
 }
 .line {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color:rgb(79, 111, 148)
 }

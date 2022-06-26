@@ -21,8 +21,6 @@ function App() {
     return prev + cur.time
   }, 0).toFixed(2);
 
-  
-
   const updateChart = () => {
     const newChart: IInitialState[] = chart.map(value => {
       let newTime: number = +(Math.random() * (10 - 0.1) + 0.1).toFixed(1)
@@ -36,25 +34,13 @@ function App() {
       const indent = prevW;
       const w = value.time/allTime*100;
       prevW += w;
-      if (index === 0) {
-        return (
-          <View key={value.name} 
-            name={value.name}
-            time={value.time} 
-            width={w} 
-            ml={indent}/>
-        )
-        
-      } else {
-        
-        return (
-          <View key={value.name} 
-            name={value.name}
-            time={value.time} 
-            width={w} 
-            ml={indent}/>
-        )
-      }
+      return (
+        <View key={value.name} 
+          name={value.name}
+          time={value.time} 
+          width={w} 
+          ml={indent}/>
+      )
     })
 
   return (

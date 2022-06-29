@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders landing page 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <p>
+      SPENT TIME (SECONDS)
+    </p>
+    <div
+      class="charts"
+    >
+      <div
+        class="wraperString"
+      >
+        <div
+          class="lineName"
+        >
+          Landing Page
+        </div>
+        <div
+          class="wrapperLine"
+        >
+          <div
+            class="line"
+            style="width: 40.217391304347835%; margin-left: 0%;"
+          >
+            7.4
+          </div>
+        </div>
+      </div>
+      <div
+        class="wraperString"
+      >
+        <div
+          class="lineName"
+        >
+          Configurator
+        </div>
+        <div
+          class="wrapperLine"
+        >
+          <div
+            class="line"
+            style="width: 1.0869565217391306%; margin-left: 40.217391304347835%;"
+          >
+            0.2
+          </div>
+        </div>
+      </div>
+      <div
+        class="wraperString"
+      >
+        <div
+          class="lineName"
+        >
+          Check-out
+        </div>
+        <div
+          class="wrapperLine"
+        >
+          <div
+            class="line"
+            style="width: 38.04347826086957%; margin-left: 41.30434782608697%;"
+          >
+            7
+          </div>
+        </div>
+      </div>
+      <div
+        class="wraperString"
+      >
+        <div
+          class="lineName"
+        >
+          Deal
+        </div>
+        <div
+          class="wrapperLine"
+        >
+          <div
+            class="line"
+            style="width: 20.652173913043477%; margin-left: 79.34782608695653%;"
+          >
+            3.8
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      data-testid="btn-rnd"
+    >
+      RND
+    </button>
+  </div>
+</div>
+`;

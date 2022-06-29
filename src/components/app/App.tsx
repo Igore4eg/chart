@@ -27,13 +27,13 @@ function App() {
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	const updateChart = useCallback(() => {
+	const updateChart = () => {
 		const newChart: IInitialState[] = chart.map(value => {
 			let newTime: number = +(Math.random() * (10 - 0.1) + 0.1).toFixed(1)
 			return {name: value.name, time: newTime}
 		})
 		setChart(newChart)
-	}, [chart]);
+	};
 
 	const renderCharts = ()=> {
 		let prevW: number = 0;
@@ -60,7 +60,7 @@ function App() {
 	return (
 		<div className="App">
 		<p>SPENT TIME (SECONDS)</p>
-		<div className="charts" data-testid='charts-list'>
+		<div className="charts">
 			{allChart}
 		</div>
 		<button data-testid="btn-rnd" onClick={updateChart}>RND</button>

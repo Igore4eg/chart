@@ -60,10 +60,10 @@ function App() {
 	return (
 		<div className="App">
 		<p>SPENT TIME (SECONDS)</p>
-		<div className="charts">
+		<div className="charts" data-testid='charts-list'>
 			{allChart}
 		</div>
-		<button onClick={updateChart}>RND</button>
+		<button data-testid="btn-rnd" onClick={updateChart}>RND</button>
 		</div>
 	);
 }

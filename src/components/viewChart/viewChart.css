@@ -1,0 +1,22 @@
+.wraperString {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 16px;
+  }
+  .lineName {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .wrapperLine {
+    width: 65%;
+    background-color: rgb(226, 226, 226);
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(79, 111, 148)
+  }

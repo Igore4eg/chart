@@ -14,4 +14,4 @@ test('render after RND button', () => {
     const btn = screen.getByTestId('btn-rnd');
     fireEvent.click(btn);
     expect(container.querySelectorAll('.wraperString').length).toBe(4);
-})
+});

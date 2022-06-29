@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import ViewChart from '../viewChart/ViewChart'
 
 import './App.css';
@@ -6,7 +6,7 @@ import './App.css';
 interface IInitialState {
 	name: string;
 	time: number;
-}
+};
 
 const initialState: IInitialState[]  = [
 	{ name: 'Landing Page', time: 7.4 },
@@ -16,6 +16,7 @@ const initialState: IInitialState[]  = [
 ];
 
 function App() {
+
 	const [chart, setChart] = useState(initialState);
 
 	useEffect(() => {
